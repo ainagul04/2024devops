@@ -1,14 +1,13 @@
----
 name: Checks
 
-on: 
+on:
   pull_request:
     branches: [main]
 
 jobs:
   test-lint:
-    name: Test and lint
-    uses: ./.github/workflow/test-and-lint.yml
-    secrets: 
+    name: Test and Lint
+    uses: ./.github/workflows/test-and-lint.yml
+    secrets:
       DOCKERHUB_USER: ${{ vars.DOCKERHUB_USER }}
-      DOCKERHUB_TOKEN: %{{ secrets.DOCKERHUB_TOKEN }}
+      DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
