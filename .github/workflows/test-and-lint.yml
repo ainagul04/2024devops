@@ -1,4 +1,4 @@
-name: Test and Lint test and lint
+name: Test and Lint
 
 on:
   workflow_call:
