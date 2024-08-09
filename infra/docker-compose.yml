@@ -6,11 +6,12 @@ services:
       - ./deploy:/tf/deploy
     working_dir: /tf
     environment:
-      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
-      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
-      - AWS_SESSION_TOKEN=${AWS_SESSION_TOKEN}
-      - AWS_DEFAULT_REGION=us-east-1
-      - TF_WORKSPACE=${TF_WORKSPACE}
+      - AWS_PROFILE=${AWS_PROFILE}
+      # - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      # - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+      # - AWS_SESSION_TOKEN=${AWS_SESSION_TOKEN}
+      # - AWS_DEFAULT_REGION=us-east-1
+      # - TF_WORKSPACE=${TF_WORKSPACE}
       # - TF_VAR_db_password=${TF_VAR_db_password}
       # - TF_VAR_django_secret_key=${TF_VAR_django_secret_key}
       # - TF_VAR_ecr_proxy_image=${TF_VAR_ecr_proxy_image}
