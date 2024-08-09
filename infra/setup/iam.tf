@@ -1,5 +1,5 @@
 ####################################
-# IAM user and policies for CD
+# IAM user and policies for CD-continious delivery
 ####################################
 
 resource "aws_iam_user" "cd" {
