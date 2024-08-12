@@ -28,7 +28,7 @@ jobs:
           else
           echo "staging" > .workspace
           fi
-      - name: Push to ECR repo
+      - name: Push to ECR
         env:
           AWS_ACCESS_KEY_ID: ${{ vars.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
