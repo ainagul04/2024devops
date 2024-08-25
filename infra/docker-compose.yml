@@ -6,12 +6,12 @@ services:
       - ./deploy:/tf/deploy
     working_dir: /tf
     env_file:
-      - image.env 
-    environment:
-      - AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID
-      - AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY
-      - AWS_SESSION_TOKEN=$AWS_SESSION_TOKEN
-      - AWS_DEFAULT_REGION=us-east-1
+      - .env 
+    # environment:
+    #   - AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID
+    #   - AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY
+    #   - AWS_SESSION_TOKEN=$AWS_SESSION_TOKEN
+    #   - AWS_DEFAULT_REGION=us-east-1
       # - AWS_ACCESS_KEY_ID="${AWS_ACCESS_KEY_ID}"
       # - AWS_SECRET_ACCESS_KEY="${AWS_SECRET_ACCESS_KEY}"
       # - AWS_SESSION_TOKEN="${AWS_SESSION_TOKEN}"
